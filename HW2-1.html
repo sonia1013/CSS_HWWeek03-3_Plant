@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+      width: 100%;
+      display: flex;
+      padding: 28px 0px;
+      background-color: #ffffff;
+    }
+    .menu{
+      height: 40px;
+      padding: 0px 15px;
+    }
+    .header nav a{
+      text-decoration: none;
+      font-size: 15px;
+      padding: 0px 18px;
+      color: black;
+    }
+    .header nav a:hover{
+      color: #518432;
+    }
+
+    .header .sidebar{
+      width: 140px;
+      height: 40px;
+      align-items: flex-end;
+    }
+    .header .sidebar .img{
+      width: 25px;
+      height: 25px;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container-v1 {
+      max-width: 1670px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-lg-5 {
+      flex: 
+        flex-grow: 0;
+        flex-shrink: 0;
+        float: basis 41.6667%; 
+      max-width: 41.6667%;
+    }
+    .col-lg-2 {
+      flex: 
+        flex-grow 0;
+        flex-shrink: 0;
+        float: basis 16.6667%; 
+      max-width: 16.6667%;
+    }
+
+
+    .logo{
+      width: 150px;
+      height: 45px;
+      margin: auto;
+      display: inline-block;
+      background-color: #999;
+    }
+    .logo .img{
+      width: 160px;
+      height: 45px;
+    }
+
+    .nav{
+      max-width: 1265px;
+      width: 100%;
+      height: 101px;
+    }
+    .top{
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .top .item{
+      width: 50%;
+      height: auto;
+      
+    }
+    .top img{
+      width: 50%;
+    }
+    .intro{
+      width: 100%;
+      max-width: 1265px;
+      height: auto;
+      display: flex;
+      margin: auto;
+    }
+    .intro .wrap{
+      padding: 0px 15px;
+    }
+    .intro h4{
+      padding-bottom: 10px;
+    }
+    .intro li{
+      padding-bottom: 40px;
+      
+    }
+    .productlists{
+      width: 1265px;
+      display: flex;
+      flex-wrap: wrap;     
+      margin: auto;
+    }
+    .productlists h2{
+      font-size: 35px; 
+      color: #518432;
+      justify-items: center;
+      display: inline-block;
+    }
+    .productlists .content{
+      width: 390px;
+      font-size: 16px;
+      padding: 15px;
+    }
+    .productlists img{
+      width: 100%;
+      height: 440px;
+    }
+    .productlists p{
+      text-align: center;
+    }
+
+    .saleing-banner{
+      width: 100%;
+      height: 375px;
+      display: flex;    
+    }
+    .saleing-banner img{
+      width: 100%;
+    }
+    .saleing-banner .container{
+      width:500px ;
+      height:200px ;
+      margin: auto;
+      padding: 15px;
+    }
+    .saleing-banner video{
+      width: 600px;
+      height: 375px;
+    }
+    .saleing-banner .a{
+      text-decoration: none;
+    }
+    .igshop{
+      width: 1265px;
+      height: 500px;
+      padding: 15px;
+      margin: auto;
+      display: flex;
+    }
+    .igshop .content{
+      width: 287px;
+      height: 287px;
+      margin: 15px;
+    }
+    .igshop img{
+      width: 100%;
+      height: 100%; 
+    }
+    .igshop:hover img{
+      background-color: #000;
+      opacity: .5;
+    }
+    .main-title{
+      margin: auto;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .saletag{
+      vertical-align: top;
+      position: absolute;
+      width: 50px;
+      height: 16px;
+      color: #4878fd;
+    }
+    .soldout{
+      vertical-align: top;
+      position: absolute;
+    }
+
+    .footer{
+      background-color: #F4F4F4;
+      height: 350px;
+      padding: 47px 0px 68px;
+      text-align: center;
+    }
+    .footer a{
+      text-decoration: none;
+    }
+    .footer li{
+      padding: 0px 20px;
+    }
+    .footer .copyright p{
+      font-size: 12.5px;
+      color: #AAA9A9;
+      padding: 30px 0px 0px;
+    }
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<title>Sunplant</title>
+
+
+
+<body>
+  <header>
+    <div class="header">
+      <div class="col-lg-5">
+        <nav>
+         <col class="menu">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Featured</a>
+          <a href="#">Pages</a>
+          <a href="#">Element</a>
+         </col>
+        </nav>
+      </div>
+   
+      <div class="col-lg-2">
+        <col class="logo">
+          <a href="＃"><img src="pictures/logo.png" alt=""></a>
+        </col>
+      </div>
+   
+      <div class="col-lg-5">
+        <div class="container">
+          <div class="row">
+            <ul class="sidebar">    
+              <li><a href="＃"></a><img src="pictures/asset 44.svg" alt=""></li>
+              <li><a href="＃"></a><img src="pictures/asset 45.svg" alt=""></li>
+              <li><a href="＃"></a><img src="pictures/asset 46.svg" alt=""></li>
+          </ul>
+
+        </div>
+    
+
+      </div>
+     
+    </div>
+  </header>
+
+
+
+  <section class="top">
+    <div class="top item">
+      <div>  
+        <h2 style="font-size: 60px;">Collection New Beautiful</h2>
+        <h3 style="font-size: 20px;">from $69</h3>
+        <!-- 這邊的button要做hover -->
+        <a href="#">shop now</a>
+      </div>
+      <div>
+        <img src="./assets (3)/asset 8.png">
+      </div>
+    </div>
+  </section>
+  <div class="main-title">
+    <!-- The important... -->
+    <h2 style="font-size: 35px; color: #518432;">The important benefits of<br>
+      greenery for the environment and health</h2>
+      <p style="font-size: 14px;">Trees have always been considered as "lungs" of the earth. Planting lots of trees helps provide a great deal of oxygen for us to breathe.<br>
+        On average, one tree can provide enough oxygen for four people. At the same time they also absorb C02, ammonia, S02, .. in the world!
+      </p>
+  </div>
+  <section class="intro">
+    <div class="wrap" style="text-align: right;">
+    <ul>
+      <li>
+        <h4>Reducing environmental pollution</h4>
+        <p>Trees have always been considered as "lungs" of the earth.</p>
+      </li>
+      <li>
+        <h4>Save water and reduce soil erosion</h4>
+        <p>Trees can slow down the evaporation of water, increasing air humidity.</p>
+      </li>
+      <li>
+        <h4>
+          Reduce street temperatures</h4>
+        <p>Planting more trees in densely populated areas will not only make the air there more fresh</p>
+      </li>
+    </div>
+    <div class="wrap"><img src="./assets (3)/asset 10.png"></div>
+    <div class="wrap">
+      <li>
+        <h4>Energy conservation</h4>
+        <p>One tree can cool down, cool down 10 rooms</p>
+      </li>
+      <li>
+        <h4>Prevent ultraviolet influence</h4>
+        <p>Green trees become shade to block the sunlight from the road</p>
+      </li>
+      <li>
+        <h4>Improve human health</h4>
+        <p>Living in a quiet, cool, clean and fresh environment will make your health better</p>
+      </li>
+    </ul>
+    </div>
+  </section>
+  <div class="productlists">  
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 11.png"></a>
+      <p>Sapien Libero<br>$150.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 13.png"></a>
+      <p>Fringilla Augue 360<br>$200.00 $150.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 15.png"></a>
+      <p>Faded Short Sleeves Variable<br>$200.00 $150.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 17.png"></a>
+      <p>Purple Floweers<br>$180.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 19.png"></a>
+      <p>Adipiscing Cursus Out Of Stock<br>$450.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 21.png"></a>
+      <p>Fringilla Augue<br>$320.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 23.png"></a>
+      <p>Purple Flowers<br>$200.00 $150.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 25.png"></a>
+      <p>Plant<br>$200.00 $150.00</p>
+    </div>
+    <div class="content">
+      <a href="http://"><img src="./assets (3)/asset 27.png"></a>
+      <p>Plant Beautiful<br>$150.00</p>
+    </div>
+
+</div>
+  <section class="saleing-banner">
+    <img src="./assets (3)/asset 43.png" alt="">
+    <div class="container">
+      <h2>A Number Of Our Products</h2>
+      <p>Pick up all you need to keep your board in optimum condition with Decathlon’s set of surfboard accessories.</p>
+      <a href="#">SHOP NOW</a>
+    </div>
+    <div class="saleing-banner video">
+
+    </div>
+  </section>
+  <div class="main-title">
+    <img src="pictures/asset 52.svg" alt="">
+    <h2>SHOP INSTAGRAM</h2>
+  </div>
+  <section class="igshop">
+    <div class="content">
+      <a href="#"><img src="./assets (3)/asset 30.png"></a>
+    </div>
+    <div class="content">
+      <a href="#"><img src="./assets (3)/asset 31.png"></a>
+    </div>
+    <div class="content">
+      <a href="#"><img src="./assets (3)/asset 32.png"></a>
+    </div>
+    <div class="content">
+      <a href="#"><img src="./assets (3)/asset 33.png"></a>
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="logo">
+    <a href="#"><img src="pictures/logo.png" alt=""></a>
+  </div>
+  <div>
+    <ul>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">customer service</a></li>
+      <li><a href="#">subscription</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <!-- 這裡要做green hover，然後都是icon -->
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+  <div class="copyright">
+    <p>Website by ShopiLaunch . Copyright SunplantShop</p>
+  </div>
+</footer>
+</html>
